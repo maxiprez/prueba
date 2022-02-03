@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Prueba selector</title>
+</head>
+<body>
+    
+<h1 class="text-center mt-5">Formulario selector test</h1>
+
+
+<form id="formGlasses" class="form__glasses" action="./pages/selectView.html">
+    <div class="container-select">
+        <span class="select-wrapper">
+            <select id="glassesOp1" required onchange="validarSelect1();">
+                <option value="" selected>Por favor, seleccione el color</option>
+                <option value="Negro">NEGRO</option>
+                <option value="Carey">CAREY</option>
+            </select>
+        </span>
+
+        <span class="select-wrapper">
+            <select id="glassesOp2" required onchange="validarSelect2();">
+                <option value="" selected>Por favor, seleccione el color</option>
+                <option value="Negro">NEGRO</option>
+                <option value="Carey">CAREY</option>
+            </select>
+        </span> 
+     </div>
+    
+     <input id="button" type="submit" value="Comprar" class="btn btn-primary" onclick="getData();">
+</form>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script> 
+</body>
+</html>

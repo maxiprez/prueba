@@ -1,0 +1,70 @@
+
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+
+.container-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: center;
+    height: 25vh;
+}
+
+.select-wrapper {
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    &::after {
+        content: '\00bb';
+        position: absolute;
+        font-family: 'Reem Kufi', sans-serif;
+        width: 20px;
+        height: 20px;
+        top: 22px;
+        right: 10px;
+        font-size: 30px;
+        line-height: 20px;
+        pointer-events: none;
+        z-index: 0;
+        transform: rotate(90deg);
+        color: #333333;
+    }
+
+    select {
+        position: relative;
+        border: 4px solid #333333;
+        background-color: transparent;
+        color: #333333;
+        padding: 15px 40px 15px 15px;
+        font-family: 'Reem Kufi', sans-serif;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 20px;
+        outline: none;
+        border-radius: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /*
+            This last styling is the magic...
+        */
+        text-align-last:center;
+    }
+}
+
+button{
+    margin-top: 2rem;
+}
+
+ul{
+     list-style:none
+}
